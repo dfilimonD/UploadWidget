@@ -1,0 +1,38 @@
+{
+    "eula": "",
+    "vendor": "SAP",
+    "license": "",
+    "id": "com.sap.sample.uploadfilesimple",
+    "version": "1.0.0",
+    "name": "Upload File - Simple",
+    "newInstancePrefix": "UploadFile",
+    "description": "A sample widget that allows users to upload a file",
+    "imports": ["table", "input-controls","planning","datasource"],
+    "webcomponents": [
+      {
+        "kind": "main",
+        "tag": "com-sap-sample-uploadfilesimple",
+        "url": "https://hanawritebackd1846f6fd.us2.hana.ondemand.com/hana_writeback/customWidgets/uploadCSV/uploadFileSimple.js",
+        "integrity": "",
+        "ignoreIntegrity": true
+      }
+    ],
+    "properties": {  
+
+    },
+    "methods": {
+      "getData": {
+        "returnType": "Selection[]",
+        "description": "Returns the Data string."
+      },  
+      "showFileSelector": {
+         "description": "Displays file selector."
+
+      }         
+    },
+    "events": {
+      "onFileUpload": {
+        "description": "Called when a file has been successfully uploaded."
+      }
+    }
+  }
